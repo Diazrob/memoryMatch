@@ -12,6 +12,7 @@ export default StyleSheet.create ({
     flex: 1,
     alignItems: "center",
     padding: 24,
+    justifyContent: 'center'
   },
   instruction: {
     alignItems: "center",
@@ -21,20 +22,33 @@ export default StyleSheet.create ({
     borderColor: "black",
     borderWidth: 2,
     borderRadius: 30,
+    marginVertical:30,
+    backgroundColor: "#DAF7A6"
+  },
+  startGame: {
+    alignItems: "center",
+    paddingVertical: 12,
+    paddingHorizontal: 24,
+    borderStyle: "solid",
+    borderColor: "black",
+    borderWidth: 2,
+    borderRadius: 30,
+    marginVertical:30,
+    backgroundColor: '#00FBFF'
   },
   main: {
     flex: 1,
-    justifyContent: "center",
     maxWidth: 960,
-    marginHorizontal: "auto",
   },
   title: {
     fontSize: 48,
     fontWeight: "bold",
+    marginTop: 20
   },
   subtitle: {
     fontSize: 36,
     color: "#38434D",
+    fontWeight: "bold"
   },
     nav: {
     height: 60,
@@ -80,5 +94,47 @@ export default StyleSheet.create ({
     fontSize: 20,
     marginLeft: 20,
   }, 
+  gifContainer: {
+    flexDirection: "row",
+    width: 400,
+    height: 200,
+    justifyContent: "space-between",
+    marginTop: 30,
+  },easy: {
+    alignItems: "center",
+    paddingVertical: 12,
+    paddingHorizontal: 24,
+    borderStyle: "solid",
+    borderColor: "black",
+    borderWidth: 2,
+    borderRadius: 30,
+    marginVertical:30,
+    backgroundColor: '#85C1E9',
+    width: 300
+  },
+  medium: {
+    alignItems: "center",
+    paddingVertical: 12,
+    paddingHorizontal: 24,
+    borderStyle: "solid",
+    borderColor: "black",
+    borderWidth: 2,
+    borderRadius: 30,
+    marginVertical:30,
+    backgroundColor: '#76D7C4',
+    width: 300
+  },
+  hard : {
+    alignItems: "center",
+    paddingVertical: 12,
+    paddingHorizontal: 24,
+    borderStyle: "solid",
+    borderColor: "black",
+    borderWidth: 2,
+    borderRadius: 30,
+    marginVertical:30,
+    backgroundColor: '#F1948A',
+    width: 300
+  },
 
 });

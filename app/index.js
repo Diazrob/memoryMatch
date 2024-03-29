@@ -22,9 +22,19 @@ export default function Page() {
     showGameInstructions(false);
   };
 
+  const startGame = () => {
+
+  }
+
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Memory Match</Text>
+      <View style={styles.logo}>
+        <Image style={{width:400,height: 100, resizeMode:"cover"}} source={require('../assets/logo.png')}/>
+      </View>
+      <View style={styles.gifContainer}>
+        <Image style={{width:120,height: 120}} source={require('../assets/pikachu.gif')}/>
+        <Image style={{width:120,height: 120}} source={require('../assets/charmander.gif')}/>
+      </View>
       <View style={styles.main}>
         <Pressable 
         style={styles.instruction}
@@ -32,8 +42,21 @@ export default function Page() {
         >
             <Text style={styles.subtitle}>How to Play?</Text>
         </Pressable>
-
-       
+        <Pressable 
+        style={styles.startGame}
+        >
+          <Link
+          href={{
+            pathname: "/gameMode",
+          }}
+          >
+            <Text style={styles.subtitle}>Start Game</Text>
+            </Link>
+        </Pressable>
+        <View style={styles.gifContainer}>
+        <Image style={{width:120,height: 120}} source={require('../assets/bulbasaur.gif')}/>
+        <Image style={{width:120,height: 120}} source={require('../assets/squirtle.gif')}/>
+      </View>
       </View>
 
           <Modal visible={gameInstructions}>
